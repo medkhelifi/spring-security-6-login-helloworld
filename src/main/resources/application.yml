@@ -1,0 +1,28 @@
+# JPA
+spring:
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+      ddl-auto: update
+    generate-ddl: true
+  # MySql
+  datasource:
+    url: jdbc:mysql://localhost:3306/springboot3_login_helloworld
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    # Connection Pool
+    hikari:
+      connection-timeout: 20000
+      minimum-idle: 10
+      maximum-pool-size: 10
+      idle-timeout: 10000
+      max-lifetime: 1000
+      auto-commit: true
+
+
+
+
+
